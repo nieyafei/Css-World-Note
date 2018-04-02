@@ -37,13 +37,13 @@
     <div class="cell">
       <span>正常内部float的效果</span>
       <div class="clear">
-        <img src="http://img.hb.aicdn.com/a06a559b578bdfb4611dce9b654e15b8d4ee7e6b41e4a-3IJwoF_fw658" />
+        <img src="../assets/images/1.jpeg" />
       </div>
     </div>
     <div class="cell">
       <span>清楚float的效果</span>
       <div class="clear clear2">
-        <img src="http://img.hb.aicdn.com/a06a559b578bdfb4611dce9b654e15b8d4ee7e6b41e4a-3IJwoF_fw658" />
+        <img src="../assets/images/1.jpeg" />
       </div>
     </div>
   </div>

@@ -1,0 +1,1 @@
+# 和border形似的outline属性
