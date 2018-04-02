@@ -1,10 +1,5 @@
 # 概述
 
-<vuep template="#demo1"></vuep>
-<script v-pre type="text/x-template" id="demo1">
-<style>
-</style>
-<template>
-</template>
-<script></script>
-</script>
+**CSS世界中，HTML是魔法石，选择器就是选择法器，CSS属性就是魔法师，CSS各种属性就是魔法师的魔法技能，浏览器是他们所在的“王国”**
+
+## 需要了解的CSS世界的专业术语

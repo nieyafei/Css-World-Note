@@ -37,13 +37,13 @@
     <div class="cell">
       <span>正常内部float的效果</span>
       <div class="clear">
-        <img src="../assets/images/1.jpeg" />
+        <img src="./../assets/images/1.jpeg" />
       </div>
     </div>
     <div class="cell">
       <span>清楚float的效果</span>
       <div class="clear clear2">
-        <img src="../assets/images/1.jpeg" />
+        <img src="./../assets/images/1.jpeg" />
       </div>
     </div>
   </div>
