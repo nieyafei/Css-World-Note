@@ -22,7 +22,7 @@
 
 
 * 元素的装饰与美化
-  * [CSS世界的color很单调](beauify/color.md)
+  * [CSS世界的color很单调](beautify/color.md)
 
 * 元素的显示与隐藏
   * [display与元素的显隐](showHide/display.md)
