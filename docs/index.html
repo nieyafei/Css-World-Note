@@ -35,7 +35,6 @@
         }
       },
       plugins: [
-        window.DocsifyCopyCodePlugin.init(),
         function (hook, vm) {
           hook.doneEach(function(){
             var path = vm.route.path.split('/').join('');
