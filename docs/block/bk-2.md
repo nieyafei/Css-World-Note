@@ -25,13 +25,39 @@
 <style>
   .cons{
     width: 80%;
+    background: #ccc;
+    margin: 0 auto;
+    padding:20px 0;
+  }
+  .cons ul{
+    -webkit-padding-start:0;
+  }
+  .cons ul li{
+    display:block;
+    width: 100%;
+    margin: 0 10px;
+    padding: 9px 10px;
+    background: #f2f2f2;
+    border-bottom:1px solid #fff;
+  }
+  .cons ul.autos li{
+    width: auto;
   }
 </style>
 <template>
   <div class="cons">
+    width: 100%;
     <ul>
       <li>1</li>
       <li>2</li>
+      <li>3</li>
+    </ul>
+
+    width: auto;
+    <ul class="autos">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
     </ul>
   </div>
 </template>
@@ -48,15 +74,26 @@
 <script v-pre type="text/x-template" id="demo2">
 <style>
   .cons{
+    position: relative;
     width: 80%;
+    background: #ccc;
+    margin: 0 auto;
+    padding:20px;
+    height:300px;
+  }
+  .pos{
+    position: absolute;
+    left: 0;
+    right: 0;
+    dispaly:inline-block;
+    background: #EFF8F3;
   }
 </style>
 <template>
   <div class="cons">
-    <ul>
-      <li>1</li>
-      <li>2</li>
-    </ul>
+    <div class="pos">
+      我是测试君，你们好吗
+    </div>
   </div>
 </template>
 <script></script>
@@ -64,7 +101,94 @@
 
 #### 2、内部尺寸和流体特性
 
+- **包裹性、自适应性**
 
+<vuep template="#demo3"></vuep>
+<script v-pre type="text/x-template" id="demo3">
+<style>
+  .cons{
+    width: 100%;
+    background: #EFF8F3;
+    margin: 0 auto;
+    padding:20px;
+    text-align:center;
+  }
+  .pos{
+    display:inline-block;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    margin-top: 30px;
+    color: orange;
+    padding: 20px;
+  }
+</style>
+<template>
+  <div class="cons">
+    <div class="pos">
+      按钮
+    </div><br/>
+    <div class="pos">
+      我是测试君，你们好吗
+    </div> <br/>
+    <div class="pos">
+      我是测试君，你们好吗，我是测试君，你们好吗我是测试君，你们好吗我是测试君，你们好吗我是测试君，你们好吗我是测试君，你们好吗
+    </div>
+  </div>
+</template>
+<script></script>
+</script>
+
+- **首选最小宽度**
+
+?> 所谓的最小宽度，指的是元素最适合的最小宽度
+
+> **1、东亚文字最小宽度是每个汉字的宽度**
+
+> **2、西方文字最小宽度是特定的连续的英文字符单元决定**
+
+> **3、类似图片的替换元素的最小宽度指该元素内容本身的宽度**
+
+<vuep template="#demo4"></vuep>
+<script v-pre type="text/x-template" id="demo4">
+<style>
+  .cons{
+    width: 100%;
+    margin: 0 auto;
+    padding:20px;
+    text-align:center;
+  }
+  .pos{
+    display:inline-block;
+    width: 70px;
+  }
+  .pos:before{
+    content: "love 你 love";
+    outline: 2px solid #EFF8F3;
+    background:#e5e5e5;
+    text-align:left;
+    float:left;
+    width: 30px;
+  }
+
+  .pos:after{
+    content: "我 love 你";
+    outline: 2px solid #EFF8F3;
+    background:#e5e5e5;
+    text-align:right;
+    float:right;
+    width: 30px;
+  }
+</style>
+<template>
+  <div class="cons">
+    <div class="pos">
+    </div>
+  </div>
+</template>
+<script></script>
+</script>
+
+- **最大宽度**
 
 ### 
 
