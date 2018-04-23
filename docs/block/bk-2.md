@@ -192,7 +192,7 @@
 
 ?> 最大宽度就是元素可以有的最大宽度
 
-
+> display为inline、inline-block、inline-table
 
 ### 
 
