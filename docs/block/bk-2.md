@@ -194,6 +194,26 @@
 
 > display为inline、inline-block、inline-table
 
+<vuep template="#demo5"></vuep>
+<script v-pre type="text/x-template" id="demo5">
+<style>
+  .cons{
+    width: 100%;
+    margin: 0 auto;
+    padding:20px;
+    text-align:center;
+  }
+  .cons span{display:inline-block;}
+</style>
+<template>
+  <div class="cons">
+    <a>我是文本inline</a>
+    <span>我是inline-block</span>
+  </div>
+</template>
+<script></script>
+</script>
+
 ### 
 
 
